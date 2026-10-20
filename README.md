@@ -1,45 +1,45 @@
-# React Chess Game
+# To-Do List App - API Plan
 
-A responsive local two-player chess game built with React, Vite, `react-chessboard`, and `chess.js`.
+Name: AMREEN Shaikh
+Task: Task (32)
 
-## Features
+## About this task
 
-- Interactive chessboard with drag-and-drop and click-to-move
-- Legal move validation and highlighted legal moves
-- Alternating turns
-- Check, checkmate, stalemate, and draw detection
-- Ten-minute countdown clock for each player, with an option to turn clocks off
-- Move history in standard algebraic notation
-- Undo the last move
-- Flip the board
-- Captured piece display
-- Pawn promotion to queen
-- Responsive layout for desktop and mobile
+This task is only about planning. I did not write any server code. I went through what the To-Do List app needs to do and worked out which APIs we will need to build later, following REST rules.
 
-## Run locally
+The full plan is in my Google Doc:
+[Paste your Google Doc link here]
 
-1. Install Node.js.
-2. Open this folder in a terminal.
-3. Install dependencies:
+## APIs I planned
 
-   ```bash
-   npm install
-   ```
+| What it does | Method | URL |
+|---|---|---|
+| Add a task | POST | /api/tasks |
+| Get all tasks | GET | /api/tasks |
+| Get one task | GET | /api/tasks/:id |
+| Edit a task | PUT | /api/tasks/:id |
+| Mark done / not done | PATCH | /api/tasks/:id |
+| Delete a task | DELETE | /api/tasks/:id |
+| Filter and search | GET | /api/tasks?status=pending&search=word |
 
-4. Start the development server:
+## CRUD coverage
 
-   ```bash
-   npm run dev
-   ```
+- Create: Add Task
+- Read: Get All Tasks, Get One Task, Filter and Search
+- Update: Edit Task, Mark as Done
+- Delete: Delete Task
 
-5. Open the local URL printed in the terminal.
+## Challenges I expect
 
-## Build
+- Making a unique id for every task
+- Checking the data that comes from the frontend
+- Keeping the tasks saved after the server restarts
+- Handling ids that do not exist
+- Not mixing up PUT and PATCH
+- CORS errors between the React app and the server
 
-```bash
-npm run build
-```
+The Google Doc has more detail on each of these, plus the request bodies, responses and the reasoning behind each API.
 
-## Notes
+## Links
 
-This is a local two-player game on one device. It does not include online multiplayer, an AI opponent, or a backend. Pawn promotion currently promotes to a queen automatically.
+- Google Doc: [Paste your Google Doc link here]
