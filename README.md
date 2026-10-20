@@ -42,4 +42,3 @@ The Google Doc has more detail on each of these, plus the request bodies, respon
 
 ## Links
 
-- Google Doc: [Paste your Google Doc link here]
